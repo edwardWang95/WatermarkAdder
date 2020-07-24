@@ -79,6 +79,7 @@ class Watermarker:
 			pdf_page.mergePage(watermark_page)
 			
 			output_writer.addPage(pdf_page)
+			output_writer.removeLinks()
 
 		output_writer.write(merged_file)
 		
